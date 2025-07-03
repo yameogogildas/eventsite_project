@@ -1,0 +1,46 @@
+/* frontend/src/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #000000; /* ✅ Fond noir élégant */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-logo h2 {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links li a .icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.navbar-links li a:hover {
+  color: #ff6f91; /* ✅ Rose vif événementiel au survol */
+  transform: scale(1.05);
+}
